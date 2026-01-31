@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax & Business Advisory Services - Comprehensive Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2c3984;
+            --primary-light: #4d5bb5;
+            --secondary: #6b3376;
+            --accent: #3498db;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --bg: #f8f9fa;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --card-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
+            --border-radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            letter-spacing: -0.5px;
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== INTRO SECTION ===== */
+        .intro-section {
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+            margin-bottom: 60px;
+        }
+
+        .intro-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .intro-section p {
+            font-size: 1.1em;
+            color: var(--dark);
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        /* ===== FILTER & VIEW CONTROLS ===== */
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+        }
+
+        .controls label {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.05em;
+        }
+
+        .controls select, .controls button {
+            padding: 12px 20px;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            background: white;
+            color: var(--primary);
+        }
+
+        .controls select {
+            min-width: 220px;
+        }
+
+        .controls button {
+            background: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+        }
+
+        .controls button:hover {
+            background: var(--primary-light);
+            border-color: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(44, 57, 132, 0.3);
+        }
+
+        /* ===== PACKAGES GRID ===== */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* ===== PACKAGE CARD ===== */
+        .package-card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+        }
+
+        .package-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .package-header {
+            padding: 30px 25px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .package-id {
+            display: inline-block;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .package-header h3 {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.3;
+        }
+
+        .package-badge {
+            display: inline-block;
+            font-size: 0.9em;
+            font-weight: 600;
+            background: var(--secondary);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .package-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-description {
+            color: var(--dark);
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .ideal-for {
+            background: #f0f4ff;
+            border-left: 4px solid var(--primary);
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .price-section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .price-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .price {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* ===== SERVICES LIST ===== */
+        .services-section h4 {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .services-section h4::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--success);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .services-list {
+            list-style: none;
+            margin-bottom: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .services-list li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            color: var(--dark);
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .services-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .service-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* ===== ACTION BUTTONS ===== */
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 2px solid var(--light);
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid var(--primary);
+            background: white;
+            color: var(--primary);
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(44, 57, 132, 0.3);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+            border-color: var(--primary-light);
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background: #8d4d96;
+            border-color: #8d4d96;
+        }
+
+        /* ===== FEATURED BADGE ===== */
+        .featured-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--warning);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .package-card.featured {
+            position: relative;
+            transform: scale(1.02);
+        }
+
+        .package-card.featured .package-header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #8d4d96 100%);
+        }
+
+        /* ===== CUSTOM PACKAGE BUILDER ===== */
+        .custom-builder {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            padding: 30px;
+            margin-bottom: 60px;
+        }
+
+        .custom-builder h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .service-category {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .service-category:last-child {
+            border-bottom: none;
+        }
+
+        .service-category h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .service-checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .service-checkbox {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .service-checkbox:hover {
+            background: #f0f4ff;
+            border-color: var(--primary);
+        }
+
+        .service-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .service-checkbox-label {
+            cursor: pointer;
+            flex-grow: 1;
+        }
+
+        .service-checkbox-label strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 4px;
+            font-size: 0.95em;
+        }
+
+        .service-checkbox-label small {
+            color: #7f8c8d;
+            font-size: 0.85em;
+        }
+
+        .custom-summary {
+            background: #f0f4ff;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .custom-summary p {
+            margin: 8px 0;
+            font-weight: 500;
+        }
+
+        .custom-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 12px 24px;
+            font-size: 1em;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        footer .contact-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header .subtitle {
+                font-size: 1.1em;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .package-card.featured {
+                transform: scale(1);
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .controls select, .controls button {
+                width: 100%;
+            }
+
+            .intro-section h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .package-card {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .package-card:nth-child(1) { animation-delay: 0.1s; }
+        .package-card:nth-child(2) { animation-delay: 0.2s; }
+        .package-card:nth-child(3) { animation-delay: 0.3s; }
+        .package-card:nth-child(4) { animation-delay: 0.4s; }
+        .package-card:nth-child(5) { animation-delay: 0.5s; }
+        .package-card:nth-child(6) { animation-delay: 0.6s; }
+
+        /* ===== UTILITY ===== */
+        .hidden {
+            display: none !important;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--primary);
+            font-size: 1.2em;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: var(--card-shadow-hover);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .close-btn {
+            color: var(--dark);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover {
+            color: var(--primary);
+        }
+    </style>
+    <!-- Last updated: 2026-01-30 17:38:51 by admin_server_v2.py -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>🎯 Tax & Business Advisory Services</h1>
+            <p class="subtitle">Comprehensive tax consulting and business advisory solutions for individuals and enterprises</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <!-- INTRO SECTION -->
+        <section class="intro-section">
+            <h2>Find the Perfect Service Package</h2>
+            <p>Whether you're an individual, growing business, or established enterprise, we have a tailored service package to meet your tax and business advisory needs.</p>
+        </section>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <label>Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Packages</option>
+                <option value="individual">Individual Services</option>
+                <option value="business">Business Services</option>
+                <option value="specialized">Specialized Services</option>
+            </select>
+            <button onclick="expandAllDetails()">View All</button>
+            <button onclick="scrollToCustom()">Build Custom</button>
+        </div>
+
+        <!-- PACKAGES GRID -->
+        <div class="packages-grid" id="packagesContainer">
+            <div class="loading">Loading packages...</div>
+        </div>
+
+        <!-- CUSTOM PACKAGE BUILDER -->
+        <section class="custom-builder" id="customBuilder">
+            <h2>🛠️ Build Your Custom Package</h2>
+            <p style="margin-bottom: 30px; color: var(--dark);">Select the services you need and we'll create a custom package tailored to your requirements.</p>
+            <div id="customServicesList"></div>
+            <div class="custom-summary">
+                <p>📋 <strong>Selected Services:</strong> <span id="customCount">0</span> services</p>
+                <p>💰 <strong>Estimated Price:</strong> <span id="customPrice">Contact us for quote</span></p>
+            </div>
+            <div class="custom-actions">
+                <button class="btn btn-primary btn-large" onclick="exportCustomToExcel()">📊 Export to Excel</button>
+                <button class="btn btn-secondary btn-large" onclick="contactForQuote()">📞 Contact for Quote</button>
+                <button class="btn btn-large" onclick="clearCustomSelection()">Clear Selection</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cambaliza McGee LLP - Tax & Business Advisory Services</p>
+            <div class="contact-info">
+                <p>📧 Email: contact@cpa-cm.com or cmllp-admin@cpa-cm.com | 📞 Phone: 949-484-8288</p>
+                <p>Professional Tax Consulting & Business Advisory</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DETAIL MODAL -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- SheetJS for Excel export -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+
+    <script>
+        // EMBEDDED DATA
+        const servicesData = {
+  "metadata": {
+    "title": "Tax & Business Advisory Services",
+    "description": "Comprehensive tax consulting and business advisory service catalog for individuals and businesses in the US",
+    "version": "1.0.0",
+    "last_updated": "2026-01-30",
+    "standard": "US Tax Code & GAAP",
+    "service_provider": "CPA Tax Consultant & Business Advisor"
+  },
+  "service_modules": [
+    {
+      "id": "ITP",
+      "name": "Individual Tax Planning & Preparation",
+      "description": "Comprehensive tax services for individuals, families, and high-net-worth clients",
+      "services": [
+        {
+          "code": "ITP-01",
+          "name": "Federal Income Tax Return Preparation (Form 1040)",
+          "scope_of_work": [
+            "Prepare and file Form 1040 with all applicable schedules",
+            "Review all income sources (W-2, 1099, investment income, rental income)",
+            "Maximize deductions and credits (standard vs itemized)",
+            "Calculate estimated tax payments for next year"
+          ],
+          "deliverable": "Filed Federal Tax Return with Summary Report",
+          "frequency": "Annual",
+          "complexity": "Medium to High"
+        },
+        {
+          "code": "ITP-02",
+          "name": "State Income Tax Returns",
+          "scope_of_work": [
+            "Prepare and file state income tax returns",
+            "Handle multi-state filing requirements",
+            "Calculate state-specific deductions and credits",
+            "Manage state estimated tax payments"
+          ],
+          "deliverable": "Filed State Tax Returns",
+          "frequency": "Annual",
+          "complexity": "Medium"
+        },
+        {
+          "code": "ITP-03",
+          "name": "Amended Tax Returns (Form 1040-X)",
+          "scope_of_work": [
+            "Review prior year returns for errors or missed opportunities",
+            "Prepare and file amended returns",
+            "Calculate refund or additional tax due",
+            "Provide supporting documentation"
+          ],
+          "deliverable": "Amended Tax Return with Explanation",
+          "frequency": "As needed",
+          "complexity": "High"
+        },
+        {
+          "code": "ITP-04",
+          "name": "Tax Planning & Strategy Consultation",
+          "scope_of_work": [
+            "Annual tax planning meeting to minimize tax liability",
+            "Review tax implications of major life events (marriage, home purchase, etc.)",
+            "Retirement account contribution strategies (IRA, 401k, Roth conversions)",
+            "Investment tax optimization (capital gains harvesting, qualified dividends)"
+          ],
+          "deliverable": "Tax Planning Report with Recommendations",
+          "frequency": "Annual or As needed",
+          "complexity": "High"
+        },
+        {
+          "code": "ITP-05",
+          "name": "Self-Employment Tax (Schedule C/SE)",
+          "scope_of_work": [
+            "Calculate business income and expenses for sole proprietors",
+            "Prepare Schedule C and Schedule SE",
+            "Advise on quarterly estimated tax payments",
+            "Home office and mileage deductions"
+          ],
+          "deliverable": "Schedule C/SE and Tax Summary",
+          "frequency": "Annual",
+          "complexity": "High"
+        }
+      ]
+    },
+    {
+      "id": "BTP",
+      "name": "Business Tax Planning & Compliance",
+      "description": "Tax preparation and compliance for corporations, partnerships, and LLCs",
+      "services": [
+        {
+          "code": "BTP-01",
+          "name": "Corporate Tax Returns (Form 1120/1120-S)",
+          "scope_of_work": [
+            "Prepare and file Form 1120 (C-Corp) or 1120-S (S-Corp)",
+            "Review financial statements and adjust for tax purposes (M-1 reconciliation)",
+            "Calculate corporate tax liability or pass-through income",
+            "Prepare K-1 schedules for shareholders"
+          ],
+          "deliverable": "Filed Corporate Tax Return with K-1s",
+          "frequency": "Annual",
+          "complexity": "High"
+        },
+        {
+          "code": "BTP-02",
+          "name": "Partnership Tax Returns (Form 1065)",
+          "scope_of_work": [
+            "Prepare and file Form 1065 for partnerships and multi-member LLCs",
+            "Allocate income, deductions, and credits to partners",
+            "Prepare Schedule K-1 for each partner",
+            "Calculate guaranteed payments and partner distributions"
+          ],
+          "deliverable": "Filed Form 1065 with Partner K-1s",
+          "frequency": "Annual",
+          "complexity": "High"
+        },
+        {
+          "code": "BTP-03",
+          "name": "Sales & Use Tax Compliance",
+          "scope_of_work": [
+            "Register for sales tax permits in required states",
+            "Calculate and file monthly/quarterly sales tax returns",
+            "Manage multi-state nexus issues and economic nexus thresholds",
+            "Handle sales tax audits and notices"
+          ],
+          "deliverable": "Filed Sales Tax Returns and Compliance Report",
+          "frequency": "Monthly/Quarterly",
+          "complexity": "Medium to High"
+        },
+        {
+          "code": "BTP-04",
+          "name": "Payroll Tax Compliance",
+          "scope_of_work": [
+            "File quarterly Form 941 (Federal Payroll Tax Return)",
+            "Prepare annual Form 940 (FUTA tax)",
+            "File W-2 and W-3 forms for employees",
+            "Manage state unemployment tax filings"
+          ],
+          "deliverable": "Filed Payroll Tax Returns",
+          "frequency": "Quarterly/Annual",
+          "complexity": "Medium"
+        },
+        {
+          "code": "BTP-05",
+          "name": "Business Tax Planning & Strategy",
+          "scope_of_work": [
+            "Entity structure optimization (LLC vs S-Corp vs C-Corp)",
+            "Tax credit identification (R&D, Work Opportunity, etc.)",
+            "Retirement plan selection and contribution strategies (SEP IRA, Solo 401k, etc.)",
+            "Section 179 and bonus depreciation planning"
+          ],
+          "deliverable": "Tax Strategy Report with Recommendations",
+          "frequency": "Annual or As needed",
+          "complexity": "High"
+        }
+      ]
+    },
+    {
+      "id": "EST",
+      "name": "Estate & Trust Tax Services",
+      "description": "Estate planning, trust administration, and gift tax services",
+      "services": [
+        {
+          "code": "EST-01",
+          "name": "Estate Tax Planning",
+          "scope_of_work": [
+            "Calculate potential estate tax liability",
+            "Develop strategies to minimize estate taxes (trusts, gifting, etc.)",
+            "Coordinate with estate planning attorneys",
+            "Review and update plans as tax laws change"
+          ],
+          "deliverable": "Estate Tax Planning Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "EST-02",
+          "name": "Gift Tax Returns (Form 709)",
+          "scope_of_work": [
+            "Prepare and file Form 709 for taxable gifts",
+            "Track lifetime gift tax exemption usage",
+            "Calculate annual exclusion gifts",
+            "Report gifts to trusts and family entities"
+          ],
+          "deliverable": "Filed Form 709",
+          "frequency": "Annual (if gifts exceed exclusion)",
+          "complexity": "High"
+        },
+        {
+          "code": "EST-03",
+          "name": "Estate Tax Returns (Form 706)",
+          "scope_of_work": [
+            "Prepare and file Form 706 for estates exceeding exemption",
+            "Value estate assets (real estate, investments, business interests)",
+            "Calculate estate tax liability and portability election",
+            "Coordinate with executors and attorneys"
+          ],
+          "deliverable": "Filed Form 706",
+          "frequency": "One-time per estate",
+          "complexity": "Very High"
+        },
+        {
+          "code": "EST-04",
+          "name": "Trust Tax Returns (Form 1041)",
+          "scope_of_work": [
+            "Prepare and file Form 1041 for trusts and estates",
+            "Calculate distributable net income (DNI)",
+            "Prepare Schedule K-1 for beneficiaries",
+            "Advise trustees on tax implications of distributions"
+          ],
+          "deliverable": "Filed Form 1041 with Beneficiary K-1s",
+          "frequency": "Annual",
+          "complexity": "High"
+        }
+      ]
+    },
+    {
+      "id": "IRS",
+      "name": "IRS Representation & Problem Resolution",
+      "description": "Represent clients before the IRS and resolve tax issues",
+      "services": [
+        {
+          "code": "IRS-01",
+          "name": "IRS Audit Representation",
+          "scope_of_work": [
+            "Represent client in correspondence, office, or field audits",
+            "Gather and organize supporting documentation",
+            "Communicate with IRS agents on client's behalf",
+            "Negotiate audit findings and settlement"
+          ],
+          "deliverable": "Audit Resolution Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "IRS-02",
+          "name": "Offer in Compromise (OIC)",
+          "scope_of_work": [
+            "Evaluate client's eligibility for OIC program",
+            "Prepare Form 656 and complete financial analysis",
+            "Negotiate settlement amount with IRS",
+            "Set up payment plan for accepted offer"
+          ],
+          "deliverable": "OIC Application and Settlement Agreement",
+          "frequency": "One-time",
+          "complexity": "Very High"
+        },
+        {
+          "code": "IRS-03",
+          "name": "Payment Plan & Installment Agreement",
+          "scope_of_work": [
+            "Apply for IRS installment agreement (Form 9465)",
+            "Negotiate payment terms and monthly amount",
+            "Set up automatic payments",
+            "Monitor compliance and prevent default"
+          ],
+          "deliverable": "Installment Agreement Confirmation",
+          "frequency": "One-time setup",
+          "complexity": "Medium"
+        },
+        {
+          "code": "IRS-04",
+          "name": "Penalty Abatement",
+          "scope_of_work": [
+            "Review penalties for reasonable cause abatement",
+            "Prepare penalty abatement request letter",
+            "Provide supporting documentation",
+            "Negotiate with IRS for penalty removal"
+          ],
+          "deliverable": "Penalty Abatement Request and Resolution",
+          "frequency": "As needed",
+          "complexity": "Medium to High"
+        },
+        {
+          "code": "IRS-05",
+          "name": "Tax Lien & Levy Release",
+          "scope_of_work": [
+            "Negotiate release of federal tax liens",
+            "Request levy release on bank accounts or wages",
+            "Provide financial hardship documentation",
+            "Set up alternative payment arrangements"
+          ],
+          "deliverable": "Lien/Levy Release Documentation",
+          "frequency": "As needed",
+          "complexity": "High"
+        }
+      ]
+    },
+    {
+      "id": "INV",
+      "name": "Investment & Retirement Tax Advisory",
+      "description": "Tax-efficient investment and retirement planning strategies",
+      "services": [
+        {
+          "code": "INV-01",
+          "name": "Investment Tax Planning",
+          "scope_of_work": [
+            "Tax-loss harvesting strategies",
+            "Capital gains tax minimization (long-term vs short-term)",
+            "Qualified dividend income optimization",
+            "Alternative investment tax treatment (crypto, real estate, etc.)"
+          ],
+          "deliverable": "Investment Tax Strategy Report",
+          "frequency": "Annual or Quarterly",
+          "complexity": "High"
+        },
+        {
+          "code": "INV-02",
+          "name": "Retirement Account Tax Planning",
+          "scope_of_work": [
+            "Traditional vs Roth IRA contribution analysis",
+            "401(k) contribution and withdrawal strategies",
+            "Roth conversion tax impact analysis",
+            "Required Minimum Distribution (RMD) planning"
+          ],
+          "deliverable": "Retirement Tax Planning Report",
+          "frequency": "Annual",
+          "complexity": "High"
+        },
+        {
+          "code": "INV-03",
+          "name": "Stock Option & RSU Tax Advisory",
+          "scope_of_work": [
+            "ISO vs NSO tax treatment analysis",
+            "RSU vesting and tax withholding strategies",
+            "ESPP discount taxation",
+            "AMT planning for stock options"
+          ],
+          "deliverable": "Equity Compensation Tax Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "INV-04",
+          "name": "Cryptocurrency Tax Reporting",
+          "scope_of_work": [
+            "Calculate capital gains/losses from crypto transactions",
+            "Report staking, mining, and airdrop income",
+            "Track cost basis across multiple wallets and exchanges",
+            "Prepare Form 8949 for crypto transactions"
+          ],
+          "deliverable": "Crypto Tax Report and Form 8949",
+          "frequency": "Annual",
+          "complexity": "Very High"
+        }
+      ]
+    },
+    {
+      "id": "REL",
+      "name": "Real Estate Tax Services",
+      "description": "Tax services for real estate investors and property owners",
+      "services": [
+        {
+          "code": "REL-01",
+          "name": "Rental Property Tax Preparation",
+          "scope_of_work": [
+            "Prepare Schedule E for rental income and expenses",
+            "Calculate depreciation on rental properties",
+            "Advise on passive activity loss limitations",
+            "Track property improvements vs repairs"
+          ],
+          "deliverable": "Schedule E and Rental Property Tax Summary",
+          "frequency": "Annual",
+          "complexity": "High"
+        },
+        {
+          "code": "REL-02",
+          "name": "1031 Exchange Tax Planning",
+          "scope_of_work": [
+            "Advise on like-kind exchange qualification",
+            "Calculate deferred gain and boot",
+            "Coordinate with qualified intermediary",
+            "Prepare Form 8824 for 1031 exchange"
+          ],
+          "deliverable": "1031 Exchange Tax Planning Report and Form 8824",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "REL-03",
+          "name": "Real Estate Professional Status",
+          "scope_of_work": [
+            "Evaluate qualification for real estate professional status",
+            "Document material participation hours",
+            "Maximize passive loss deductions",
+            "Prepare supporting documentation for IRS"
+          ],
+          "deliverable": "Real Estate Professional Status Report",
+          "frequency": "Annual",
+          "complexity": "High"
+        },
+        {
+          "code": "REL-04",
+          "name": "Opportunity Zone Investment Advisory",
+          "scope_of_work": [
+            "Evaluate Opportunity Zone investment benefits",
+            "Calculate capital gains deferral and basis step-up",
+            "Track holding period requirements",
+            "Prepare Form 8997 for Opportunity Zone investments"
+          ],
+          "deliverable": "Opportunity Zone Tax Advisory Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        }
+      ]
+    },
+    {
+      "id": "BUS",
+      "name": "Business Advisory & Consulting",
+      "description": "Strategic business advisory services beyond tax compliance",
+      "services": [
+        {
+          "code": "BUS-01",
+          "name": "Business Entity Formation & Structure",
+          "scope_of_work": [
+            "Analyze optimal entity structure (Sole Prop, LLC, S-Corp, C-Corp)",
+            "Coordinate entity registration with state agencies",
+            "Obtain EIN and set up tax accounts",
+            "Draft operating agreements and bylaws (with attorney)"
+          ],
+          "deliverable": "Entity Formation Package and Advisory Report",
+          "frequency": "One-time",
+          "complexity": "High"
+        },
+        {
+          "code": "BUS-02",
+          "name": "Financial Forecasting & Budgeting",
+          "scope_of_work": [
+            "Create 12-month cash flow projections",
+            "Develop annual operating budget",
+            "Scenario analysis (best case, worst case, likely case)",
+            "Monthly budget vs actual variance reporting"
+          ],
+          "deliverable": "Financial Forecast and Budget Report",
+          "frequency": "Annual with Monthly Updates",
+          "complexity": "High"
+        },
+        {
+          "code": "BUS-03",
+          "name": "Business Valuation",
+          "scope_of_work": [
+            "Perform business valuation for sale, acquisition, or estate planning",
+            "Calculate value using income, market, and asset approaches",
+            "Prepare formal valuation report",
+            "Support valuation in negotiations or litigation"
+          ],
+          "deliverable": "Business Valuation Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "BUS-04",
+          "name": "Succession Planning",
+          "scope_of_work": [
+            "Develop business succession strategy",
+            "Evaluate buy-sell agreement options",
+            "Plan for ownership transition and tax implications",
+            "Coordinate with estate planning and insurance advisors"
+          ],
+          "deliverable": "Succession Planning Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "BUS-05",
+          "name": "Merger & Acquisition Advisory",
+          "scope_of_work": [
+            "Financial due diligence for acquisitions",
+            "Tax structure optimization (asset vs stock purchase)",
+            "Valuation analysis and deal structure recommendations",
+            "Post-merger integration planning"
+          ],
+          "deliverable": "M&A Advisory Report",
+          "frequency": "As needed",
+          "complexity": "Very High"
+        },
+        {
+          "code": "BUS-06",
+          "name": "KPI Dashboard & Performance Metrics",
+          "scope_of_work": [
+            "Identify key performance indicators for the business",
+            "Set up KPI tracking and reporting dashboard",
+            "Benchmark against industry standards",
+            "Monthly performance review meetings"
+          ],
+          "deliverable": "KPI Dashboard and Performance Reports",
+          "frequency": "Monthly",
+          "complexity": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "INT",
+      "name": "International Tax Services",
+      "description": "Tax services for cross-border transactions and foreign income",
+      "services": [
+        {
+          "code": "INT-01",
+          "name": "Foreign Income Reporting (FBAR, FATCA)",
+          "scope_of_work": [
+            "File FinCEN Form 114 (FBAR) for foreign bank accounts",
+            "Prepare Form 8938 (FATCA) for foreign financial assets",
+            "Report foreign pension and investment income",
+            "Calculate foreign tax credit (Form 1116)"
+          ],
+          "deliverable": "FBAR, Form 8938, and Foreign Income Tax Report",
+          "frequency": "Annual",
+          "complexity": "Very High"
+        },
+        {
+          "code": "INT-02",
+          "name": "Expatriate Tax Services",
+          "scope_of_work": [
+            "Prepare US tax returns for Americans living abroad",
+            "Calculate foreign earned income exclusion (Form 2555)",
+            "Advise on foreign housing exclusion/deduction",
+            "Manage tax treaty benefits"
+          ],
+          "deliverable": "Expat Tax Return Package",
+          "frequency": "Annual",
+          "complexity": "Very High"
+        },
+        {
+          "code": "INT-03",
+          "name": "Controlled Foreign Corporation (CFC) Compliance",
+          "scope_of_work": [
+            "Prepare Form 5471 for US shareholders of foreign corporations",
+            "Calculate Subpart F income and GILTI",
+            "Report foreign dividends and deemed distributions",
+            "Coordinate with foreign tax advisors"
+          ],
+          "deliverable": "Form 5471 and CFC Compliance Report",
+          "frequency": "Annual",
+          "complexity": "Very High"
+        },
+        {
+          "code": "INT-04",
+          "name": "Transfer Pricing Documentation",
+          "scope_of_work": [
+            "Prepare transfer pricing documentation for intercompany transactions",
+            "Ensure arm's-length pricing compliance",
+            "Develop transfer pricing policies",
+            "Support IRS or foreign tax authority inquiries"
+          ],
+          "deliverable": "Transfer Pricing Report",
+          "frequency": "Annual",
+          "complexity": "Very High"
+        }
+      ]
+    }
+  ],
+  "service_packages": [
+    {
+      "id": "individual-essential",
+      "name": "Individual Essential Package",
+      "description": "Core tax preparation for W-2 employees and individuals with straightforward tax situations. Includes federal and state returns with standard deductions.",
+      "category": "individual",
+      "included_services": [
+        "ITP-01",
+        "ITP-02"
+      ],
+      "ideal_for": "W-2 employees with simple tax situations",
+      "estimated_price": "$400-$700"
+    },
+    {
+      "id": "individual-plus",
+      "name": "Individual Plus Package",
+      "description": "Comprehensive tax services for individuals with multiple income sources, self-employment, or rental properties. Includes tax planning and optimization.",
+      "category": "individual",
+      "included_services": [
+        "ITP-01",
+        "ITP-02",
+        "ITP-04",
+        "ITP-05",
+        "REL-01"
+      ],
+      "ideal_for": "Self-employed individuals, freelancers, and rental property owners",
+      "estimated_price": "$800-$1,500"
+    },
+    {
+      "id": "small-business",
+      "name": "Growing Business Package",
+      "description": "Complete tax compliance and planning for small businesses, including corporate/partnership returns, payroll tax filings, and quarterly advisory.",
+      "category": "business",
+      "included_services": [
+        "BTP-01",
+        "BTP-02",
+        "BTP-04",
+        "BTP-05",
+        "BUS-02",
+        "BUS-06"
+      ],
+      "ideal_for": "Small businesses (under $1M revenue) needing full tax and advisory support",
+      "estimated_price": "$2,500-$5,000 annually"
+    },
+    {
+      "id": "investor-package",
+      "name": "Investor & High Net Worth Package",
+      "description": "Specialized tax planning for investors and high-net-worth individuals with complex investment portfolios, real estate holdings, and estate planning needs.",
+      "category": "specialized",
+      "included_services": [
+        "ITP-01",
+        "ITP-02",
+        "ITP-04",
+        "INV-01",
+        "INV-02",
+        "INV-03",
+        "REL-01",
+        "EST-01",
+        "EST-02"
+      ],
+      "ideal_for": "High-net-worth individuals and active investors",
+      "estimated_price": "$3,000-$8,000 annually",
+      "featured": true
+    },
+    {
+      "id": "international-package",
+      "name": "International Tax Package",
+      "description": "Comprehensive tax services for US citizens abroad, foreign nationals in the US, and businesses with international operations.",
+      "category": "specialized",
+      "included_services": [
+        "ITP-01",
+        "ITP-02",
+        "INT-01",
+        "INT-02",
+        "INT-03"
+      ],
+      "ideal_for": "Expats, foreign nationals, and businesses with cross-border activities",
+      "estimated_price": "$2,000-$6,000 annually"
+    },
+    {
+      "id": "enterprise-advisory",
+      "name": "Enterprise Advisory Package",
+      "description": "Full-service tax, accounting, and business advisory for established businesses. Includes tax compliance, strategic planning, M&A support, and ongoing CFO-level advisory.",
+      "category": "business",
+      "included_services": [
+        "BTP-01",
+        "BTP-02",
+        "BTP-03",
+        "BTP-04",
+        "BTP-05",
+        "BUS-01",
+        "BUS-02",
+        "BUS-03",
+        "BUS-04",
+        "BUS-05",
+        "BUS-06"
+      ],
+      "ideal_for": "Established businesses ($1M+ revenue) requiring comprehensive tax and advisory services",
+      "estimated_price": "$10,000+ annually",
+      "featured": true
+    }
+  ]
+};
+
+        // SERVICE CODE TO NAME MAPPING
+        const serviceCodeMap = {};
+        const serviceDetailMap = {};
+        servicesData.service_modules.forEach(module => {
+            module.services.forEach(service => {
+                serviceCodeMap[service.code] = service.name;
+                serviceDetailMap[service.code] = {
+                    name: service.name,
+                    scope: service.scope,
+                    module: module.name,
+                    moduleId: module.id
+                };
+            });
+        });
+
+        // Custom selection tracking
+        const customSelection = new Set();
+
+        // INITIALIZE
+        document.addEventListener('DOMContentLoaded', function() {
+            renderPackages();
+            setupFilterListener();
+            buildCustomServicesList();
+        });
+
+        // RENDER PACKAGES
+        function renderPackages() {
+            const container = document.getElementById('packagesContainer');
+            const packages = servicesData.service_packages;
+
+            container.innerHTML = '';
+
+            packages.forEach((pkg, index) => {
+                const card = createPackageCard(pkg, index);
+                container.appendChild(card);
+            });
+        }
+
+        // CREATE PACKAGE CARD
+        function createPackageCard(pkg, index) {
+            const div = document.createElement('div');
+            div.className = `package-card ${pkg.featured ? 'featured' : ''}`;
+            div.dataset.category = pkg.category;
+
+            const servicesList = pkg.included_services
+                .map(code => `<li><span class="service-name">${serviceCodeMap[code] || code}</span></li>`)
+                .join('');
+
+            div.innerHTML = `
+                ${pkg.featured ? '<div class="featured-badge">⭐ POPULAR</div>' : ''}
+                <div class="package-header">
+                    <div class="package-id">${pkg.id}</div>
+                    <h3>${pkg.name}</h3>
+                    <span class="package-badge">${pkg.category.toUpperCase()}</span>
+                </div>
+                <div class="package-content">
+                    <p class="package-description">${pkg.description}</p>
+                    <div class="ideal-for">👥 <strong>Ideal For:</strong> ${pkg.ideal_for}</div>
+                    <div class="price-section">
+                        <span class="price-label">Estimated Price</span>
+                        <div class="price">${pkg.estimated_price}</div>
+                    </div>
+                    <div class="services-section">
+                        <h4>Included Services (${pkg.included_services.length})</h4>
+                        <ul class="services-list">
+                            ${servicesList}
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="selectPackage('${pkg.id}')" style="flex: 1.2;">Select</button>
+                        <button class="btn" onclick="showDetails('${pkg.id}')" style="flex: 1;">Details</button>
+                        <button class="btn" onclick="exportPackageToExcel('${pkg.id}')" style="flex: 1; background: #27ae60; border-color: #27ae60; color: white;">📊 Export</button>
+                    </div>
+                </div>
+            `;
+
+            return div;
+        }
+
+        // BUILD CUSTOM SERVICES LIST
+        function buildCustomServicesList() {
+            const container = document.getElementById('customServicesList');
+            container.innerHTML = '';
+
+            servicesData.service_modules.forEach(module => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'service-category';
+
+                let servicesHtml = `<h3>${module.name}</h3><div class="service-checkbox-group">`;
+
+                module.services.forEach(service => {
+                    servicesHtml += `
+                        <label class="service-checkbox">
+                            <input type="checkbox" value="${service.code}" onchange="updateCustomSelection()">
+                            <div class="service-checkbox-label">
+                                <strong>${service.code}</strong>
+                                <small>${service.name}</small>
+                            </div>
+                        </label>
+                    `;
+                });
+
+                servicesHtml += '</div>';
+                categoryDiv.innerHTML = servicesHtml;
+                container.appendChild(categoryDiv);
+            });
+        }
+
+        // UPDATE CUSTOM SELECTION
+        function updateCustomSelection() {
+            customSelection.clear();
+            document.querySelectorAll('.service-checkbox input:checked').forEach(checkbox => {
+                customSelection.add(checkbox.value);
+            });
+
+            document.getElementById('customCount').textContent = customSelection.size;
+            
+            if (customSelection.size === 0) {
+                document.getElementById('customPrice').textContent = 'Contact us for quote';
+            } else {
+                document.getElementById('customPrice').textContent = 'Contact us for custom pricing';
+            }
+        }
+
+        // FILTER FUNCTIONALITY
+        function setupFilterListener() {
+            document.getElementById('categoryFilter').addEventListener('change', function(e) {
+                const category = e.target.value;
+                const cards = document.querySelectorAll('.package-card');
+
+                cards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        }
+
+        // EXPAND ALL DETAILS
+        function expandAllDetails() {
+            alert('Click "Details" on any package to see the full service list!');
+        }
+
+        // SCROLL TO CUSTOM
+        function scrollToCustom() {
+            document.getElementById('customBuilder').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // SHOW DETAILED MODAL
+        function showDetails(packageId) {
+            const pkg = servicesData.service_packages.find(p => p.id === packageId);
+            if (!pkg) return;
+
+            const modalBody = document.getElementById('modalBody');
+            const servicesList = pkg.included_services
+                .map(code => {
+                    const detail = serviceDetailMap[code];
+                    return `<li><strong>${code}</strong> - ${detail.name}<br/><small style="color: #7f8c8d;">${detail.scope}</small></li>`;
+                })
+                .join('');
+
+            modalBody.innerHTML = `
+                <h2>${pkg.name}</h2>
+                <p>${pkg.description}</p>
+                <h3>Package Details</h3>
+                <p><strong>Category:</strong> ${pkg.category.toUpperCase()}</p>
+                <p><strong>Price:</strong> ${pkg.estimated_price}</p>
+                <p><strong>Ideal For:</strong> ${pkg.ideal_for}</p>
+                <h3>Included Services (${pkg.included_services.length})</h3>
+                <ul style="list-style: none; padding: 0;">${servicesList}</ul>
+                <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button class="btn btn-primary" onclick="selectPackage('${pkg.id}'); closeModal();">Select This Package</button>
+                    <button class="btn" onclick="exportPackageToExcel('${pkg.id}');">📊 Export to Excel</button>
+                    <button class="btn" onclick="closeModal();">Close</button>
+                </div>
+            `;
+
+            document.getElementById('detailModal').style.display = 'block';
+        }
+
+        // CLOSE MODAL
+        function closeModal() {
+            document.getElementById('detailModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('detailModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // SELECT PACKAGE
+        function selectPackage(packageId) {
+            const pkg = servicesData.service_packages.find(p => p.id === packageId);
+            alert(`✓ You've selected: ${pkg.name}\n\nPrice: ${pkg.estimated_price}\n\nPlease contact us to proceed.`);
+        }
+
+        // EXPORT PACKAGE TO EXCEL
+        function exportPackageToExcel(packageId) {
+            const pkg = servicesData.service_packages.find(p => p.id === packageId);
+            if (!pkg) return;
+
+            const worksheetData = [];
+            worksheetData.push(['Tax & Business Advisory Services - Package Details']);
+            worksheetData.push([]);
+            worksheetData.push(['Package Name', pkg.name]);
+            worksheetData.push(['Package ID', pkg.id]);
+            worksheetData.push(['Category', pkg.category.toUpperCase()]);
+            worksheetData.push(['Price', pkg.estimated_price]);
+            worksheetData.push(['Ideal For', pkg.ideal_for]);
+            worksheetData.push([]);
+            worksheetData.push(['Service Code', 'Service Name', 'Module', 'Description']);
+
+            pkg.included_services.forEach(code => {
+                const detail = serviceDetailMap[code];
+                worksheetData.push([
+                    code,
+                    detail.name,
+                    detail.module,
+                    detail.scope
+                ]);
+            });
+
+            const wb = XLSX.utils.book_new();
+            const ws = XLSX.utils.aoa_to_sheet(worksheetData);
+            ws['!cols'] = [
+                { wch: 15 },
+                { wch: 40 },
+                { wch: 30 },
+                { wch: 50 }
+            ];
+
+            XLSX.utils.book_append_sheet(wb, ws, 'Package Details');
+            XLSX.writeFile(wb, `${pkg.name}-${new Date().toISOString().split('T')[0]}.xlsx`);
+        }
+
+        // EXPORT CUSTOM TO EXCEL
+        function exportCustomToExcel() {
+            if (customSelection.size === 0) {
+                alert('Please select at least one service first!');
+                return;
+            }
+
+            const worksheetData = [];
+            worksheetData.push(['Tax & Business Advisory Services - Custom Package']);
+            worksheetData.push(['Generated:', new Date().toLocaleString()]);
+            worksheetData.push([]);
+            worksheetData.push(['Service Code', 'Service Name', 'Module', 'Description']);
+
+            customSelection.forEach(code => {
+                const detail = serviceDetailMap[code];
+                worksheetData.push([
+                    code,
+                    detail.name,
+                    detail.module,
+                    detail.scope
+                ]);
+            });
+
+            worksheetData.push([]);
+            worksheetData.push(['Total Services Selected:', customSelection.size]);
+            worksheetData.push(['Estimated Price:', 'Contact us for custom pricing']);
+
+            const wb = XLSX.utils.book_new();
+            const ws = XLSX.utils.aoa_to_sheet(worksheetData);
+            ws['!cols'] = [
+                { wch: 15 },
+                { wch: 40 },
+                { wch: 30 },
+                { wch: 50 }
+            ];
+
+            XLSX.utils.book_append_sheet(wb, ws, 'Custom Package');
+            XLSX.writeFile(wb, `custom-tax-services-${new Date().toISOString().split('T')[0]}.xlsx`);
+        }
+
+        // CONTACT FOR QUOTE
+        function contactForQuote() {
+            if (customSelection.size === 0) {
+                alert('Please select at least one service first!');
+                return;
+            }
+            alert(`✓ Your custom package with ${customSelection.size} services has been prepared.\n\nPlease contact us:\n📧 contact@cpa-cm.com or cmllp-admin@cpa-cm.com\n📞 949-484-8288\n\nWe'll provide a detailed quote within 24 hours.`);
+        }
+
+        // CLEAR CUSTOM SELECTION
+        function clearCustomSelection() {
+            customSelection.clear();
+            document.querySelectorAll('.service-checkbox input:checked').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            updateCustomSelection();
+        }
+    </script>
+</body>
+</html>
